@@ -1,0 +1,64 @@
+name: Limux
+description: Application de recommandation de films et séries
+
+# Version publiée dans les stores
+publish_to: 'none'
+
+# Version de l'application
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI
+  cupertino_icons: ^1.0.5
+  cached_network_image: ^3.2.3
+  shimmer: ^2.0.0
+  flutter_staggered_animations: ^1.1.1
+  lottie: ^2.3.2
+  google_fonts: ^4.0.4
+  
+  # État
+  provider: ^6.0.5
+  
+  # Stockage local
+  shared_preferences: ^2.1.1
+  path_provider: ^2.0.15
+  
+  # Réseau et API
+  http: ^0.13.6
+  dio: ^5.1.2
+  
+  # Utilitaires
+  intl: ^0.18.1
+  url_launcher: ^6.1.11
+  share_plus: ^7.0.1
+  image_picker: ^0.8.7+5
+  uuid: ^3.0.7
+  
+  # Sécurité
+  flutter_secure_storage: ^8.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+  build_runner: ^2.4.4
+  flutter_launcher_icons: ^0.14.3
+
+# Configuration des icônes
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
+  min_sdk_android: 21
+
+# Configuration Flutter
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
